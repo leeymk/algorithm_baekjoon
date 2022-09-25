@@ -16,5 +16,7 @@ for i in range(first_num+1):
             result = result_list[:]
 
 print(len_result)
-final_result = [str(result[i]) for i in range(len(result))]
+final_result = []
+for i in range(len(result)):
+    final_result.append(str(result[i]))
 print(' '.join(final_result))
